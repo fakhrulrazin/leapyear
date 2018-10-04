@@ -2,26 +2,26 @@
 
 int main()
 {
-    int year;
+    int n;
 
     printf("Enter a year: ");
-    scanf("%d",&year);
+    scanf("%d",&n);
 
-    if(year%4 == 0)
+    if(n%4 == 0)
     {
-        if( year%100 == 0)
+        if( n%100 == 0)
         {
             // year is divisible by 400, hence the year is a leap year
-            if ( year%400 == 0)
-                printf("%d is a leap year.", year);
+            if ( n%400 == 0)
+                printf("%d is a leap year.", n);
             else
-                printf("%d is not a leap year.", year);
+                printf("%d is not a leap year.", n);
         }
         else
-            printf("%d is a leap year.", year );
+            printf("%d is a leap year.", n );
     }
     else
-        printf("%d is not a leap year.", year);
+        printf("%d is not a leap year.", n);
     
     return 0;
 }
